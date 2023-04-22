@@ -17,7 +17,7 @@
 
     html, body {
         min-height: 100vh;
-        background-color: rgb(126, 121, 121);
+        background-color: rgb(119, 113, 113);
     }
 
     header {
@@ -46,6 +46,11 @@
             font-weight: bolder;
          }
 
+         header a:hover, footer a:hover {
+            text-decoration: underline;
+         }
+
+
          section {
             padding-top: 10vh;
             padding-bottom: 10vh;
@@ -55,23 +60,38 @@
             font-size: 4vw;
          }
 
-         header a:hover, footer a:hover {
-            text-decoration: underline;
+       
+        
+         section.normal {
+            background-color:white;
+            color:black;
          }
 
-         section.normal {
-            background-color: rgb(80, 79, 79);
+         section.imagem {
+            background-color: rgb(126, 123, 119);
             color: white;
+            box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
+            background-size: cover;
+            background-attachment: fixed;
          }
          
          section.imagem > p {
             display: inline-block;
             padding: 5px;
-             background-color: rgb(63, 62, 62);
-
-             
+             background-color: rgba(14, 13, 13, 0.473);
+              
+             text-shadow: 1px 1px 0px black;
+             border-radius: 15px;
          }
     
+         section#img01 {
+                background-image: url(../imagens/background001.jpg);
+                background-position: right center;
+         }
+
+         section#img02 {
+                background-image: url(../imagens/background002.jpg);
+         }
     footer {
         background-color: black;
         color: white;

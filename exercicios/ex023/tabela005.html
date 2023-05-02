@@ -23,7 +23,13 @@
             border: 1px solid black;
             padding: 10px;
             text-align: center;
+        }
 
+        .amarelo {
+            background-color: yellow;
+        }
+        .vermelho {
+            background-color: red;
         }
     </style>
 </head>
@@ -31,6 +37,12 @@
     <h1>Exercício de Tabela</h1>
 
     <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
@@ -43,6 +55,36 @@
             <td>F</td>
             <td>25</td>
             <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Cláudio </td>
+            <td>M</td>
+            <td>28</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Gustavo </td>
+            <td>M</td>
+            <td>42</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Hélio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Vendedor</td>
+        </tr>
+        <tr>
+            <td>AMaria </td>
+            <td>F</td>
+            <td>39</td>
+            <td>Médica</td>
+        </tr>
+        <tr>
+            <td>Otávio </td>
+            <td>M</td>
+            <td>22</td>
+            <td>Nutricionista</td>
         </tr>
     </table>
 </body>
